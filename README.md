@@ -16,7 +16,9 @@ steps. It is assumed you are logged in as root or running sudo su.
 Prepare a server class computer running linux (Ubuntu 20.04, Mint 20.3, VPS is OK)
 
 Download epicbox.zip and unzip
+
 Create a DNS entry pointing to epicbox.your-domain
+
 Install nginx
 
 In epicbox.nginx: modify domain then copy to /etc/nginx/sites-enabled
