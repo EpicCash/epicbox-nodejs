@@ -56,11 +56,12 @@ Monitor epicbox with 'journalctl -fu epicbox.service'
 
 After at lease one transaction has run through your epicbox:
 - $ mongosh
-``` use epicbox
-    db.slates.createIndex({queue:1, made:1, createdat: 1})
-    db.slates.createIndex({messageid:1, made:1})
-    db.slates.createIndex({ "createdat": 1 }, {expireAfterSeconds: 604800 })
-    quit()
+```
+use epicbox
+db.slates.createIndex({queue:1, made:1, createdat: 1})
+db.slates.createIndex({messageid:1, made:1})
+db.slates.createIndex({ "createdat": 1 }, {expireAfterSeconds: 604800 })
+quit()
 ``` 
 Note: epicbox created from app_mongo.js at https://github.com/EpicCash/epicboxnodejs
 (copy to app.js and run pkg -o epicbox)
