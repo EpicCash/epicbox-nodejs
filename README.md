@@ -65,6 +65,6 @@ db.slates.createIndex({messageid:1, made:1})
 db.slates.createIndex({ "createdat": 1 }, {expireAfterSeconds: 604800 })
 quit()
 ``` 
-Note: epicbox created from app_mongo.js at [https://github.com/EpicCash/epicboxnodejs-source]
+Note: epicbox created from app_mongo.js at https://github.com/EpicCash/epicboxnodejs-source
 (run pkg -t node18 -o epicbox app_mongo.js)
 
