@@ -1,0 +1,25 @@
+#
+# To install:
+# sudo cp epicbox.service /etc/systemd/system/epicbox.service
+# sudo systemctl daemon-reload
+# sudo systemctl start epicbox.service
+# sudo systemctl enable epicbox.service
+# Monitor: journalctl -fu epicbox.service
+
+[Unit]
+Description=Epicbox Relay Server service 
+After=network.target
+
+[Service]
+ExecStart=/home/epicbox/epicbox
+WorkingDirectory=/home/epicbox
+Restart=always
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=epicbox
+User=epicbox
+Group=epicbox
+
+[Install]
+WantedBy=multi-user.target
+
