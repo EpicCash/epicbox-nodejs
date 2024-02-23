@@ -26,7 +26,7 @@ In epicbox.nginx: modify domain then copy to /etc/nginx/sites-enabled
 Install certbot and run to update the nginx file:
 - $ apt install certbot
 - $ apt install certbot python3-certbot-nginx
-- $ certbot --nginx -d your-domain -d epicbox.your-domain
+- $ certbot --nginx --redirect -d your.domain -d epicbox.your.domain -m youremailaddress --agree-tos --no-eff-email
 
 Restart nginx service
 
