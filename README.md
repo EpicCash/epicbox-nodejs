@@ -54,7 +54,7 @@ In config.json: change "epicbox_domain": "epicbox.epicnet.us" to your epicbox.yo
 
 Monitor epicbox with 'journalctl -fu epicbox.service'
 
-Creante mongodb index:
+Create mongodb index:
 - $ mongosh
 ```
 use epicbox
