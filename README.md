@@ -39,8 +39,8 @@ Restart nginx service
 Install mongodb: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition
 
 Copy mongod.conf to /etc
-- $ systemctl enable mongod
-- $ systemctl start mongod
+- $ service mongod start
+- $ service mongod status
 
 Monitor mongodb with 'journalctl -fu mongod.service'
 
@@ -54,7 +54,7 @@ In config.json: change "epicbox_domain": "epicbox.epicnet.us" to your epicbox.yo
 
 Monitor epicbox with 'journalctl -fu epicbox.service'
 
-After at lease one transaction has run through your epicbox:
+Creante mongodb index:
 - $ mongosh
 ```
 use epicbox
