@@ -39,8 +39,9 @@ Restart nginx service
 Install mongodb: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition
 
 Copy mongod.conf to /etc
-- $ service mongod start
-- $ service mongod status
+- $ systemctl enable mongod
+- $ systemctl start mongod
+- $ systemctl status mongod
 
 Monitor mongodb with 'journalctl -fu mongod.service'
 
