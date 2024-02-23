@@ -22,6 +22,7 @@ Create a DNS entry pointing to epicbox.your-domain
 Install nginx
 
 In epicbox.nginx: modify domain then copy to /etc/nginx/sites-enabled
+- $ systemctl restart nginx
 
 Install certbot and run to update the nginx file:
 - $ apt install certbot
@@ -29,6 +30,7 @@ Install certbot and run to update the nginx file:
 - $ certbot --nginx --redirect -d your.domain -d epicbox.your.domain -m youremailaddress --agree-tos --no-eff-email
 
 Restart nginx service
+- $ systemctl restart nginx
 
 Install mongodb: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition
 
