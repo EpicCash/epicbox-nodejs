@@ -15,13 +15,17 @@ steps. It is assumed you are logged in as root or running sudo su.
 
 Prepare a server class computer running linux (Ubuntu 20.04, Mint 20.3, VPS is OK)
 
-Download epicbox.zip and unzip
+Create user 'epicbox'
+cd /home/epicbox
+
+Download epicbox.zip and unzip into /home/epicbox
+chown files to epicbox and make binaries executable (if not already) in /home/epicbox
 
 Create a DNS entry pointing to epicbox.your-domain
 
 Install nginx
 
-In epicbox.nginx: modify domain then copy to /etc/nginx/sites-enabled
+In epicbox.nginx: modify domain to epicbox.your.domain then copy to /etc/nginx/sites-enabled
 - $ systemctl restart nginx
 
 Install certbot and run to update the nginx file:
@@ -40,21 +44,13 @@ Copy mongod.conf to /etc
 
 Monitor mongodb with 'journalctl -fu mongod.service'
 
-Create user 'epicbox'
+Epicbox Server:
 
-Copy epicbox and epicboxlib binaries, config.json to /home/epicbox
-
-Copy epicbox.service to /etc/systemd/system/
-
-In config.json: change "epicbox_domain": "epicbox.epicnet.us" to your domain
-
-Save and copy config.json to /home/epicbox
-
-chown files to epicbox and make binaries executable (if not already) in /home/epicbox
-
+In config.json: change "epicbox_domain": "epicbox.epicnet.us" to your epicbox.your.domain
+- $ cp epicbox.service /etc/systemd/system
 - $ systemctl daemon-reload
+- $ systemctl start epicbox.service
 - $ systemctl enable epicbox.service
-- $ systemctl start epicbox
 
 Monitor epicbox with 'journalctl -fu epicbox.service'
 
