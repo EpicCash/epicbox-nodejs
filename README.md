@@ -56,6 +56,8 @@ In config.json: change "epicbox_domain": "epicbox.epicnet.us" to your epicbox.yo
 Monitor epicbox with 'journalctl -fu epicbox.service'
 
 Create mongodb index:
+After epicbox has processed one transaction (to create the epicbox db and slates collection):
+
 - $ mongosh
 ```
 use epicbox
