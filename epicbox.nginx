@@ -1,6 +1,6 @@
 server {
     
-        server_name epicbox.epicnet.us;
+        server_name epicbox.epiccash.com;
 
         root /var/www/html/epicbox/;
         index index.html index.htm;
