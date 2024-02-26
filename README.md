@@ -1,4 +1,4 @@
-# epicbox-nodejs
+# epicbox-nodejs - Installation Files for 3.0.0
 
 Files for Installing the epicbox Server
 
