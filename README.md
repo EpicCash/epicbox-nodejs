@@ -52,10 +52,10 @@ In config.json: change "epicbox_domain": "epicbox.your.domain" to your own domai
 
 - $ cp epicbox.service /etc/systemd/system
 - $ systemctl daemon-reload
-- $ systemctl start epicbox.service
-- $ systemctl enable epicbox.service
+- $ systemctl start epicbox
+- $ systemctl enable epicbox
 
-Monitor epicbox with 'journalctl -fu epicbox.service'
+Monitor epicbox with 'journalctl -fu epicbox'
 
 Create mongodb index (after epicbox has processed one transaction to create the epicbox db and slates collection):
 
