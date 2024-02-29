@@ -75,10 +75,12 @@ Note: epicbox created from app_mongo.js at https://github.com/EpicCash/epicboxno
 
 - $ systemctl stop epicbox
 
-Download epicbox.zip and unzip epicbox, epicboxlib, config.json into /home/epicbox as user: epicbox
+Download epicbox.zip and unzip epicbox and epicboxlib into /home/epicbox as user: epicbox ($ su epicbox)
 
-In config.json: change "epicbox_domain": "epicbox.your.domain" to your own domain
+Check config.json in .zip for changes and unzip if it needs updating
+
+In config.json: change "epicbox_domain": "epicbox.your.domain" to your own domain (if updated)
 
 - $ systemctl start epicbox
-  
+
 
