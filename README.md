@@ -71,3 +71,14 @@ Note: epicbox created from app_mongo.js at https://github.com/EpicCash/epicboxno
 
 (run pkg -t node18 -o epicbox app_mongo.js)
 
+## Update Existing Server:
+
+- $ systemctl stop epicbox
+
+Download epicbox.zip and unzip epicbox, epicboxlib, config.json into /home/epicbox as user: epicbox
+
+In config.json: change "epicbox_domain": "epicbox.your.domain" to your own domain
+
+- $ systemctl start epicbox
+  
+
