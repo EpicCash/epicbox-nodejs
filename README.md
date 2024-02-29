@@ -19,6 +19,7 @@ Create user 'epicbox'
 cd /home/epicbox
 
 Download epicbox.zip and unzip into /home/epicbox
+
 chown epicbox, epicboxlib, config.json to epicbox:epicbox and make binaries executable (if not already) in /home/epicbox
 
 Create a DNS entry pointing to epicbox.your-domain
