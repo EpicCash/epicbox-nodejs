@@ -11,7 +11,7 @@ Description=Epicbox Relay Server service
 After=network.target
 
 [Service]
-ExecStart=/home/epicbox/epicbox
+ExecStart=/home/epicbox/epicbox config.json
 WorkingDirectory=/home/epicbox
 Restart=always
 StandardOutput=journal
