@@ -75,7 +75,7 @@ Note: epicbox created from app_mongo.js at https://github.com/EpicCash/epicboxno
 
 - $ systemctl stop epicbox
 
-Download epicbox.zip and unzip epicbox and epicboxlib into /home/epicbox as user: epicbox ($ su epicbox)
+Download epicbox.zip and unzip epicbox and epicboxlib into /home/epic as user: epic ($ su epic)
 
 Check config.json in .zip for changes and unzip if it needs updating
 
