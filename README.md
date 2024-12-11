@@ -15,12 +15,12 @@ steps. It is assumed you are logged in as root or running sudo su.
 
 Prepare a server class computer running linux (Ubuntu 20.04, Mint 20.3, VPS is OK)
 
-Create user 'epicbox'
-cd /home/epicbox
+Create user 'epic'
+cd /home/epic
 
-Download epicbox.zip and unzip into /home/epicbox
+Download epicbox.zip and unzip into /home/epic
 
-chown epicbox, epicboxlib, config.json to epicbox:epicbox and make binaries executable (if not already) in /home/epicbox
+chown epicbox, epicboxlib, config.json to epic:epic and make binaries executable (if not already) in /home/epic
 
 Create a DNS entry pointing to epicbox.your-domain
 
