@@ -11,14 +11,14 @@ Description=Epicbox Relay Server service
 After=network.target
 
 [Service]
-ExecStart=/home/epicbox/epicbox config.json
-WorkingDirectory=/home/epicbox
+ExecStart=/home/epic/epicbox config.json
+WorkingDirectory=/home/epic
 Restart=always
 StandardOutput=journal
 StandardError=journal
 SyslogIdentifier=epicbox
-User=epicbox
-Group=epicbox
+User=epic
+Group=epic
 
 [Install]
 WantedBy=multi-user.target
